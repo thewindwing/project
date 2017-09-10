@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+
+/*nav*/
+#nav{
+  margin-top:10px;
+  background:#fff;
+  >div{
+    padding:10px;
+    >div{
+   >a{
+     display:block;
+     text-align:center;
+     >img{
+       width:50px;
+     }
+     >p{
+       margin-top:5px;
+       font-size:14px;
+     }
+   }
+    }
+    >div:nth-last-child(-n+4){
+      display:none;
+    }
+  }
+}
+/*recommend*/
+#recommend{
+  background:#fff;
+  //padding-bottom:10px;
+
+  >.recommend-title{
+    padding:0 10px;
+    background:#ff841d;
+    color:#fff;
+    height:35px;
+    line-height:35px;
+    img{
+      width:20px;
+    }
+  }
+  >.recommend-list{
+
+   >.media{
+     padding:10px;
+     border-bottom:1px solid #ccc;
+   }
+    .media-body{
+      h4{
+        padding:10px 0;
+        //超出的内容显示为冒号
+        overflow:hidden;
+        text-overflow:ellipsis;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:1;
+      }
+      p:nth-last-child(1){
+        color:#ccc;
+      }
+    }
+    img{
+      width:100px;
+    }
+  }
+  >.recommend-more{
+  padding:10px 0;
+    >a{
+      margin:0 auto;
+      text-align:center;
+      display:block;
+      width:90%;
+      border-radius:10px;
+      height:30px;
+      line-height:30px;
+      border:1px solid #ccc;
+    }
+
+  }
+}

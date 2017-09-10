@@ -1,0 +1,13 @@
+//适配 mixin   根据主流设备生成适配代码
+//根据@adapterDevice生成适配代码
+//遍历  for没有这样语法  for(var i = 0 ; i < len l; i++){}
+//迭代  自己执行完成之后 调用一下自己（当前索引+1）
+//数组  只能根据序号取对应的值  @index 序号
+.adapterFuc(@index) when ( @index <= @len ){
+  @media (min-width: extract(@adapterDevice,@index)) {
+    html{
+      font-size: extract(@adapterDevice,@index)/@psdWidth*@baseSize;
+    }
+  }
+  .adapterFuc( @index + 1 );
+}

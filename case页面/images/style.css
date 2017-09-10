@@ -1,0 +1,277 @@
+@CHARSET "UTF-8";
+.images1 img{
+	width:100%;
+}
+.module_global{
+	width:1200px;
+	margin:0 auto;
+}
+.module1 .wenzi1{
+	align:center;
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+}
+.module1 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	aligin:center;
+	margin-top:20px;
+	color:#999999;
+}
+.module2{
+	
+	margin-top:30px;
+}
+.module2 .menu{
+	margin-left:100px;
+	float:left;
+}
+.module2 .menu img{
+	width:150px;
+}
+.module2 .menu h3{
+	margin-top:20px;
+}
+.module2 .menu p{
+	color:#747474;
+	margin-top:10px;
+	line-height:20px;
+	text-align: left;
+}
+.module3{
+	margin-left:330px;
+	float:left;
+}
+.module3 .wenzi1{
+	align:center;
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+}
+.module3 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	aligin:center;
+	margin-top:20px;
+	color:#999999;
+}
+.module4 img{
+	width:100%;
+}
+.module5 .wenzi1{
+	align:center;
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+	font-weight:normal;
+}
+.module5 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	aligin:center;
+	margin-top:20px;
+	color:#999999;
+}
+.module6{
+	margin-top:50px;
+	
+}
+.module6 .tab{
+	border-radius: 15px; 
+	margin-left:20px;
+	float:left;
+	width:275px;
+	height:415px;
+	border:1px solid #6586fc;
+}
+.module6 .tab .img1{
+	margin-top:50px;
+}
+.module6 .tab h2{
+	margin-top:25px;
+}
+.module6 .tab img{
+	margin-top:10px;
+}
+.module6 .tab p{
+	margin:30px;
+	color:#747474;
+	line-height:30px;
+	text-align:left;
+}
+.module7{
+	float:left;
+	margin-left:300px;
+}
+.module7 .wenzi1{
+	align:center;
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+	font-weight:normal;
+}
+.module7 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	align:center;
+	margin-top:20px;
+	color:#999999;
+	line-height:30px;
+}
+.back{	
+	background-image:url(../images/16.jpg);
+	background-repeat: no-repeat;
+	height:500px;
+/*	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;*/
+}
+.module8 .tuwen{
+	width:700px;
+	height:100px;
+}
+.module8 .columns{
+	display: inline-block;
+	vertical-align: middle;
+	width:70px;
+	height:70px;
+	font-size:22px;
+	font-weight: 600;
+    line-height:70px; 
+	background: #FFFFFF;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.module8 span{
+	padding-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-family:"微软雅黑";
+	font-size:14px;
+	line-height: 25px;
+	text-align: left;
+}
+.module8 .tuwen1{
+	width:700px;
+	height:100px;
+}
+.module9 .wenzi1{
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+	font-weight:normal;
+}
+.anli{
+	width:1200px;
+	margin:0px auto;
+}
+.anli .anli1{
+	width:600px;
+	float:left;
+	margin-top: 50px;
+	font-family:"微软雅黑";
+	font-size:18px;
+}
+.anli .tupian{
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	width:350px;
+	height:140px;
+	border: 1px solid #6586fc;
+}
+.anli .tupian img{
+	margin-top:10px;
+}
+.anli .wenzi{
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	width:350px;
+	text-align: left;
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#808080;
+	line-height: 25px;
+}
+.module10 .wenzi1{
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+	font-weight:normal;
+}
+.module10 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	align:center;
+	margin-top:20px;
+	color:#999999;
+	line-height:30px;
+}
+.back2{
+	margin-top:20px;
+	background-image:url(../images/13.jpg);
+	background-repeat: no-repeat;
+	height:300px;
+}
+.back2 .wenzi1{
+	padding-top:80px;
+	font-size: 24px;
+	color:#FFFFFF;
+}
+.back2 .wenzi2{
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #FFFFFF;
+	
+   
+    /*height: 10px;*/
+    line-height: 10px;;
+    text-align: center;
+}
+.back2 .wenzi2 a{
+	display:inline-block;
+	vertical-align:top;
+	 padding: 20px; 
+    width: 120px;
+    border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+    border: 1px solid #FFFFFF;
+}
+.back2 .wenzi2 a:hover{
+	color:#fff;
+	opacity:0.9;
+	text-decoration:none;
+}
+.module11 .wenzi1{
+	margin-top:40px;
+	color:#6e6e6e;
+	font-family:"微软雅黑";
+	font-size:36px;
+	font-weight:normal;
+}
+.module11 .wenzi2{
+	font-size:14px;
+	font-family:"微软雅黑";
+	align:center;
+	margin-top:20px;
+	color:#999999;
+	line-height:30px;
+}
+.pic:hover{
+	opacity:0.5;
+.tab:hover{
+	opacity:0.5;		

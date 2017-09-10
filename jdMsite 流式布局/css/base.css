@@ -1,0 +1,64 @@
+/*根据移动端设置样式*/
+/*===reset css ===*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    /*移动端特有的 都是非固定像素布局*/
+    box-sizing: border-box;
+    /*移动端特有的 兼容问题*/
+    -webkit-box-sizing: border-box;
+    /*移动端特有的 清除点击默认高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    /*不允许输入框拉伸*/
+    resize: none;
+    /*移动特有 输入框默认样式立体的阴影效果*/
+    -webkit-appearance: none;
+}
+em{
+    font-style:normal;
+}
+/*=== common css ===*/
+.f_left{
+    float:left;
+}
+.f_right{
+    float:right;
+}
+.clearfix::before,.clearfix::after{
+    content:"";
+    display:block;
+    visibility:hidden;
+    clear:both;
+    height:0;
+    line-height:0;
+}
+/*精灵图公用设置*/
+[class^="icon_"],[class*=" icon_"]{
+    background-image:url("../images/sprites.png");
+    background-size:200px 200px;
+    background-repeat:no-repeat;
+}

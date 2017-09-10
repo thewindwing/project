@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <!--引入bootstrap-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!--引入less样式-->
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/category.less">
+    <!--less基础-->
+    <script src="lib/less/less.min.js"></script>
+</head>
+<body>
+<!--header-->
+<header id="header">
+    <a href="index.html" class="left logo" data-id="1">
+        <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="#" class="right app">
+        <img src="images/header_app.png" alt="">
+    </a>
+</header>
+<!--search-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入您要搜索的商品">
+        <input type="submit" value="搜索">
+    </form>
+
+</section>
+<!--category-->
+<section id="category">
+    <ul class="category">
+     <!--   <li >
+            <img src="" alt="更多" class="right">
+            <a href="#">大家电</a>
+            &lt;!&ndash;下拉菜单&ndash;&gt;
+            <ul class="clearfix">
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+            </ul>
+        </li>
+        <li >
+            <img src="" alt="更多" class="right">
+            <a href="#">大家电</a>
+            &lt;!&ndash;下拉菜单&ndash;&gt;
+            <ul class="clearfix">
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+            </ul>
+        </li>
+        <li >
+            <img src="" alt="更多" class="right">
+            <a href="#">大家电</a>
+            &lt;!&ndash;下拉菜单&ndash;&gt;
+            <ul class="clearfix">
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">电视</a></li>
+            </ul>
+        </li>-->
+    </ul>
+</section>
+<!--footer-->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4"><a href="#">登录</a></div>
+        <div class="col-xs-4"><a href="#">注册</a></div>
+        <div class="col-xs-4"><a href="#">返回顶部</a></div>
+    </div>
+    <p>
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <a href="#">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+
+<!--动态创建category的标题-->
+<!--<script type="text/template" id="templateTitle">
+    {{each result as item i}}
+    <li >
+        <a href="#" data-title-id={{item.titleId}} > {{item.title}}</a>
+        <ul class="clearfix"></ul>
+    </li>
+    {{/each}}
+</script>-->
+<script type="text/template" id="templateTitle">
+    <%for(var i=0;i<result.length ;i++){%>
+        <%var item=result[i]%>
+    <li >
+        <a href="#" data-title-id=<%=item.titleId%> > <%=item.title%></a>
+        <ul class="clearfix"></ul>
+    </li>
+   <%}%>
+</script>
+
+<!--动态创建category的下拉菜单-->
+<!--<script type="text/html" id="categoryList">
+{{each result as item i}}
+    <li><a href="#" data-list-id={{item.categoryId}}>{{item.category}}</a></li>
+{{/each}}
+</script>-->
+<script type="text/html" id="categoryList">
+<%for(var i=0; i < result.length ;i++){%>
+<%var item=result[i]%>
+    <li><a href="productList.html?categoryid=<%=item.categoryId%>&pageid=1" data-list-id= <%=item.categoryId%> > <%=item.category%> </a></li>
+    <%}%>
+</script>
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="lib/template/template.js"></script>-->
+<script src="lib/template/template-native.js"></script>
+<script src="js/url.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

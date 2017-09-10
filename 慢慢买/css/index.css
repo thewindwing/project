@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*nav*/
+#nav {
+  margin-top: 10px;
+  background: #fff;
+}
+#nav > div {
+  padding: 10px;
+}
+#nav > div > div > a {
+  display: block;
+  text-align: center;
+}
+#nav > div > div > a > img {
+  width: 50px;
+}
+#nav > div > div > a > p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+#nav > div > div:nth-last-child(-n+4) {
+  display: none;
+}
+/*recommend*/
+#recommend {
+  background: #fff;
+}
+#recommend > .recommend-title {
+  padding: 0 10px;
+  background: #ff841d;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+}
+#recommend > .recommend-title img {
+  width: 20px;
+}
+#recommend > .recommend-list > .media {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#recommend > .recommend-list .media-body h4 {
+  padding: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+#recommend > .recommend-list .media-body p:nth-last-child(1) {
+  color: #ccc;
+}
+#recommend > .recommend-list img {
+  width: 100px;
+}
+#recommend > .recommend-more {
+  padding: 10px 0;
+}
+#recommend > .recommend-more > a {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 90%;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+}

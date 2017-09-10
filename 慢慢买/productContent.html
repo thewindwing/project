@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" >
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/productContent.less">
+    <script src="lib/less/less.min.js"></script>
+</head>
+<body>
+<!--header-->
+<header id="header">
+    <a href="index.html" class="left logo" data-id="1">
+        <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="#" class="right app">
+        <img src="images/header_app.png" alt="">
+    </a>
+</header>
+
+
+<!--search-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入您比价的商品">
+        <input type="submit" value="搜索">
+    </form>
+
+</section>
+
+
+<!--navContent-->
+<section id="navContent">
+    <span><a href="index.html">首页</a></span>
+    <span><a href="" class="parentName">电视</a></span>
+    <span class="categoryTitle"></span>
+    <a href="#" class="right">筛选</a>
+</section>
+
+
+<!--productContent-->
+<section id="productContent">
+    <div class="info">
+        <script type="text/template" id="info">
+            <p>{{result[0].productName}}</p>
+            <div class="img">
+                {{#result[0].productImg}}
+                <!--<img src="images/ic_bcj.png" alt="">-->
+                <span >收藏</span>
+            </div>
+</script>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-4"><span>比价购买</span></div>
+        <div class="col-xs-4"><span>比价购买</span></div>
+        <div class="col-xs-4"><span>哦评价</span></div>
+    </div>
+    <div class="price">
+        <span class="left"><i></i>京东商城</span>
+        <a href="#" class="right">去购买</a>
+        <span class="red right" >1999.00</span>
+    </div>
+    <p>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+</section>
+
+
+<!--evaluate评价-->
+<section id="evaluate">
+    <div class="ev-title">网友评价</div>
+    <div class="evaluate-content"></div>
+    <script type="text/template" id="user-evaluate">
+    {{each result as item i}}
+    <div class="ev-body">
+        <div class="clearfix">
+            <span class="left">{{item.comName}}</span>
+            <span class="right">{{item.comTime}}</span>
+        </div>
+        <p>{{item.comFrom}}</p>
+        <p>{{item.comContent}}</p>
+    </div>
+   {{/each}}
+</script>
+    <div class="more-evaluate"><a href="#">查看更多评价</a></div>
+</section>
+
+<!--footer-->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4"><a href="#">登录</a></div>
+        <div class="col-xs-4"><a href="#">注册</a></div>
+        <div class="col-xs-4"><a href="#">返回顶部</a></div>
+    </div>
+    <p>
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <a href="#">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/template/template.js"></script>
+<script src="js/url.js"></script>
+<script src="js/common.js"></script>
+<script src="js/productContent.js"></script>
+</body>
+</html>

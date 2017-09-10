@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/productList.less">
+    <script src="lib/less/less.min.js"></script>
+</head>
+<body>
+
+<!--header-->
+<header id="header">
+    <a href="index.html" class="left logo" data-id="1">
+        <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="#" class="right app">
+        <img src="images/header_app.png" alt="">
+    </a>
+</header>
+
+
+<!--search-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入您要搜索的商品">
+        <input type="submit" value="搜索">
+    </form>
+
+</section>
+
+
+<!--navContent-->
+<section id="navContent">
+    <span><a href="index.html">首页</a></span>
+    <span><a href="category.html">全部分类</a></span>
+    <span class="categoryTitle"></span>
+    <a href="#" class="right">筛选</a>
+</section>
+
+
+<!--recommend-->
+<section id="recommend">
+    <!--<div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object"
+                     src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                     alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+            <p class="red"><strong>10.9元</strong></p>
+            <p>
+                <span class="left">京东商城10-25 14:10</span>
+                <span class="left">有1人评论</span>
+            </p>
+
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object"
+                     src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg"
+                     alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+            <p class="red"><strong>10.9元</strong></p>
+            <p>
+                <span class="left">京东商城10-25 14:10</span>
+                <span class="left">有1人评论</span>
+            </p>
+
+        </div>
+    </div>-->
+</section>
+
+
+<!--page-->
+<section id="page">
+    <div class="row">
+        <div class="col-xs-4"><a href="" class="prePage">上一页</a></div>
+        <div class="col-xs-4">
+            <select name="" id="">
+                <!-- <option value="1">&nbsp;1/3&nbsp;</option>
+                 <option value="2">&nbsp;2/3&nbsp;</option>
+                 <option value="3">&nbsp;3/3&nbsp;</option>-->
+            </select>
+        </div>
+        <div class="col-xs-4"><a href="" class="nextPage">下一页</a></div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4"><a href="#">登录</a></div>
+        <div class="col-xs-4"><a href="#">注册</a></div>
+        <div class="col-xs-4"><a href="#">返回顶部</a></div>
+    </div>
+    <p>
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <a href="#">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+
+<!--动态渲染商品列表-->
+<script type="text/html" id="productlist">
+    <%for(var i = 0;i < result.length ;i++){%>
+        <%var item=result[i]%>
+
+        <div class="media">
+            <div class="media-left">
+                <a href="productContent.html?productid=<%=item.productId%>&brandName=<%=item.brandName%>">
+                    <%=#item.productImg%>
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><%=item.productName%></h4>
+                <p class="red"><strong><%=item.productPrice%></strong></p>
+                <p>
+                    <span class="left"><%=item.productQuote%></span>
+                    <span class="left"><%=productCom%></span>
+                </p>
+            </div>
+        </div>
+        <%}%>
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template/template-native.js"></script>
+<script src="js/url.js"></script>
+<script src="js/productList.js"></script>
+</body>
+</html>

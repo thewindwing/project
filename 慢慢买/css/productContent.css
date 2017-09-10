@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*navContent*/
+#navContent {
+  background: #e8e8e8;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+#navContent > span > a:after {
+  content: '>';
+  padding: 0 3px;
+}
+#navContent > a {
+  padding: 0 10px;
+  background: #ccc;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+/*productContent*/
+#productContent {
+  text-align: center;
+  background: #fff;
+}
+#productContent > .info > p {
+  padding: 20px;
+  font-size: 22px;
+}
+#productContent > .info > div.img {
+  position: relative;
+  /* height: 300px;
+       line-height: 300px;*/
+  padding: 30px 0 50px 0;
+}
+#productContent > .info > div.img > span {
+  position: absolute;
+  background: #4d2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  right: 30px;
+  bottom: 20px;
+}
+#productContent > div.row {
+  color: #fff;
+  font-size: 18px;
+  border-top: 1px solid indianred;
+  border-bottom: 1px solid indianred;
+}
+#productContent > div.row > div {
+  height: 40px;
+  line-height: 40px;
+  background: plum;
+}
+#productContent > div.row > div:first-child {
+  background: orange;
+}
+#productContent > div.row > div + div {
+  border-left: 1px solid indianred;
+}
+#productContent > div.price {
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+#productContent > div.price > span:first-of-type > i {
+  padding-right: 5px;
+}
+#productContent > div.price > a {
+  margin-top: 15px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 10px;
+  background: orangered;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+#productContent > p:last-of-type {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #999;
+  text-align: left;
+  margin-bottom: 0;
+  height: 50px;
+  line-height: 50px;
+}
+/*evaluate*/
+#evaluate .ev-title {
+  height: 50px;
+  background: #999;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+#evaluate .ev-body {
+  padding: 10px 20px;
+  color: #999;
+  border-bottom: 1px solid #ccc;
+}
+#evaluate .ev-body > p:first-of-type {
+  text-align: right;
+}
+#evaluate .ev-body > p:last-of-type {
+  color: black;
+}
+#evaluate > .more-evaluate {
+  height: 60px;
+  padding: 0 10px;
+}
+#evaluate > .more-evaluate > a {
+  display: block;
+  border: 1px solid #ccc;
+  background: #e0e4e7;
+  border-radius: 10px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 20px;
+}

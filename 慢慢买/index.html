@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" href="css/index.less">
+</head>
+<body>
+
+<!--header-->
+<header id="header">
+    <a href="#" class="left logo" data-id="1">
+        <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="#" class="right app">
+        <img src="images/header_app.png" alt="">
+    </a>
+</header>
+<!--search-->
+<section id="search">
+    <form action="#">
+        <input type="search" placeholder="请输入您要搜索的商品">
+        <input type="submit" value="搜索">
+    </form>
+
+</section>
+<!--nav-->
+<nav id="nav">
+    <div class="row">    
+      <!--动态渲染 -->
+    </div>
+
+</nav>
+<!--recommend-->
+<section id="recommend">
+    <div class="recommend-title">
+        <span>更多优惠信息</span>
+        <a href="#" class="right">
+            <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+        </a>
+    </div>
+    <div class="recommend-list">
+        <!--动态创建-->
+     <!--   <script type="text/html" id="recommend-template">
+            {{each result as item i}}
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                       {{#item.productImgSm}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{item.productName}}</h4>
+                    <p class="red">{{item.productPinkage}}</p>
+                    <p>
+                        <span class="left">{{item.productFrom
+}}{{item.productTime}}</span>
+                        <span class="right">{{item.productComCount}}</span>
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+</script>-->
+       <!-- <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+                <p class="red">10.9元</p>
+                <p>
+                    <span class="left">京东商城10-25 14:10</span>
+                    <span class="right">有1人评论</span>
+                </p>
+
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+                <p class="red">10.9元</p>
+                <p>
+                    <span class="left">京东商城10-25 14:10</span>
+                    <span class="right">有1人评论</span>
+                </p>
+
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+                <p class="red">10.9元</p>
+                <p>
+                    <span class="left">京东商城10-25 14:10</span>
+                    <span class="right">有1人评论</span>
+                </p>
+
+            </div>
+        </div>-->
+
+    </div>
+    <div class="recommend-more">
+        <a href="#">更多优惠信息</a>
+    </div>
+    <div class="recommend-title">
+        <span>品牌排行</span>
+        <a href="#" class="right">
+            <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+        </a>
+    </div>
+</section>
+<!--footer-->
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4"><a href="#">登录</a></div>
+        <div class="col-xs-4"><a href="#">注册</a></div>
+        <div class="col-xs-4"><a href="#">返回顶部</a></div>
+    </div>
+    <p>
+        <a href="#" class="red">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        <a href="#">-- 掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+</footer>
+
+ 
+<!-- 动态渲染nav -->
+   <script type="text/template" id="nav-template">
+           {{each result as item i}}
+           <div class="col-xs-3">
+                    <a href="{{=item.titlehref}}">
+                    {{#item.img}}
+                    <p>{{=item.name}}</p>
+                    </a>
+                    </div>
+            {{/each}}
+        </script>
+
+<!--动态渲染recommend-->
+<script type="text/x-handlebars-template" id="recommend-template">
+    {{#each result}}
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                {{{productImgSm}}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{productName}}</h4>
+            <p class="red">{{productPinkage}}</p>
+            <p>
+                        <span class="left">{{productFrom
+}}{{productTime}}</span>
+                <span class="right">{{productComCount}}</span>
+            </p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script src="js/url.js"></script>
+<script src="lib/template/template.js"></script>
+<script src="lib/handlebar/handlebars-v4.0.10.js"></script>
+<script src="lib/less/less.min.js"></script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

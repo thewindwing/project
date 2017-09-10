@@ -1,0 +1,9 @@
+//根据主流设备生产适配代码
+.adapterFuc(@index) when (@index<=@len){
+@media (min-width:extract(@adapterDevice,@index)){
+  html{
+    font-size:extract(@adapterDevice,@index)/@psdWidth*@baseSize;
+  }
+}
+  .adapterFuc(@index+1);
+}

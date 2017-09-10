@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            /*行高和字体一样大*/
+            line-height: 1;
+        }
+        body{
+            font-size: 50px;
+        }
+        .em{
+            /*1.默认的字体大小是16px  是绝对的吗？不是，和浏览器设置有关系*/
+            /*2.em是基于父元素的字体大小来的  ---->32px */
+            font-size: 2em;
+        }
+        .rem{
+            /*1. rem  里面的r root 根元素  html文档根元素 */
+            /*2.rem是基于根元素的字体大小来决定的  */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!--字体大小PX-->
+    <div class="em">AAAAA</div>
+    <div class="rem">AAAAA</div>
+</body>
+</html>

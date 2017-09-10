@@ -1,0 +1,490 @@
+/*头部*/
+#header {
+    height: 100px;
+    /*line-height: 100px;*/
+    position: relative;
+    /*overflow:hidden;*/
+}
+
+/*logo*/
+#header #logo {
+    float: left;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+#header #logo a {
+    display: block;
+}
+
+/*搜索栏*/
+#header #search {
+    float: left;
+    line-height: 1;
+    margin: 20px 0 0 90px;
+    text-align: center;
+}
+
+#header #search p {
+    color: #75a7c4;
+
+}
+
+#header #search .search {
+    margin-top: 5px;
+    border: 1px solid #75a7c4;
+    border-radius: 15px;
+    height: 24px;
+}
+
+#header #search .search input.left {
+    width: 110px;
+    margin: 3px 5px 0 6px;
+    height: 17px;
+    vertical-align: top;
+}
+
+#header #search .search input.right {
+    width: 17px;
+    margin: 5px 10px 0 0;
+    background: url(../images/so.jpg) no-repeat center;
+}
+#space{
+    position:absolute;
+    top:100px;
+    width:100%;
+    height:0;
+
+}
+/*菜单栏*/
+#menu {
+    position: absolute;
+    right: 170px;
+    margin-top: 120px;
+    height:0;
+    overflow:hidden;
+}
+
+#menu ul {
+    float: left;
+    width:100px;
+    line-height:2;
+}
+
+#menu ul a:hover {
+    color: #75a7c4;
+    text-decoration: underline;
+}
+
+/*banner*/
+#banner img {
+    width: 100%;
+}
+
+/*导航栏*/
+#nav {
+    float: right;
+}
+
+#nav ul li {
+    float: left;
+    border-left: 1px solid #d6e4ed;
+}
+
+#nav ul li a {
+    /*position: relative;*/
+    display: block;
+    width: 97px;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    color: rgb(62, 102, 125);
+}
+
+#nav ul li a div {
+    line-height: 36px;
+    margin-top:10px;
+    height:36px;
+    overflow:hidden;
+    position:relative;
+}
+#nav ul li a div p{
+    position:absolute;
+    width:97px;
+    top:0;
+}
+#nav ul li a>span {
+    /*position:absolute;*/
+    margin: 0 auto;
+    display: block;
+    width: 42px;
+    height: 33px;
+    background: url(../images/mcy_ico.png) no-repeat;
+    background-position-y:0;
+}
+
+#nav ul li a span.bg1 {
+    background-position-x: 5px;
+
+}
+
+#nav ul li a span.bg2 {
+    background-position-x: -93px;
+}
+
+#nav ul li a span.bg3 {
+    background-position-x: -189px;
+}
+
+#nav ul li a span.bg4 {
+    background-position-x: -284px;
+}
+
+#nav ul li a span.bg5 {
+    background-position-x: -384px;
+}
+
+#nav ul li a span.bg6 {
+    background-position-x: -479px;
+}
+
+#nav ul li a span.bg7 {
+    background-position-x: -580px;
+}
+
+#nav ul li a span.bg8 {
+    background-position-x: -677px;
+}
+
+#nav ul li a span.bg9 {
+    background-position-x: -772px;
+}
+
+#nav ul li a span.bg10 {
+    margin-top: 15px;
+    background-position-x: -867px;
+}
+
+#nav ul li a span.bg11 {
+    margin-top: 15px;
+    background-position-x: -964px;
+}
+
+/*mcy brand*/
+#brand {
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+#brand h2 {
+    color: #3e667d;
+    font: 500 45px/1.1 "Arial", "\5FAE\8F6F\96C5\9ED1";
+    padding-bottom: 10px;
+}
+
+#brand p {
+    color: #666;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/*case类型*/
+#types {
+    width: 438px;
+    margin: 50px auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+#types li {
+    float: left;
+    border: 1px solid #eeeeee;
+    font-size: 20px;
+}
+
+#types li a {
+    display: block;
+    width: 144px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+}
+
+#types li a.current {
+    background: #75a7c4;
+    color: #fff;
+}
+
+/*各个案例分类项目*/
+#items li {
+    float: left;
+    width: 8.3333333%; /*均等分割父元素的宽*/
+}
+
+#items li a {
+    text-align: center;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    background: #b2b2b2;
+    margin: 10px 6px 0;
+    font-size: 14px;
+}
+
+#items li.first a {
+    background: #75a7c4;
+}
+
+#items .red  {
+    background: red;
+}
+/*列表图片信息*/
+#row {
+    margin-top: 20px;
+}
+
+#row li {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+    height: 211px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#row li > div {
+    margin: 0 6px;
+    position: absolute;
+}
+
+#row li a {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+}
+
+#row li img {
+    height: 211px;
+    width: 378px;
+}
+
+#row li .item {
+    opacity: 1;
+    overflow: hidden;
+    width: 378px;
+    height: 211px;
+}
+
+#row li .item a {
+    /*position:relative;*/
+}
+
+#row li .item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#row .info {
+    width: 378px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    font-family: 宋体, arial, helvetica, sans-serif;
+}
+
+#row .info img {
+    max-height: 55px;
+    width: auto;
+    margin-top: 10%;
+}
+
+#row .info p {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+/*tab切换*/
+#tab {
+    padding: 35px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tab ul {
+    display: inline-block;
+
+}
+
+#tab li {
+    float: left;
+    margin-left: 3px;
+}
+
+#tab li a {
+    display: block;
+    width: 35px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #e6e6e6;
+    font-size: 13px;
+}
+
+#tab li a.rdo1 {
+    border-radius: 5px 0 0 5px;
+}
+
+#tab li a.rdo2 {
+    border-radius: 0 5px 5px 0;
+}
+
+#tab li a.rgb {
+    background: #75a7c4;
+    color: #fff;
+}
+
+/*底部*/
+#footer {
+    background: #282828;
+    padding: 50px 0 30px 0;
+}
+
+#footer .col {
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#footer .col h2.title {
+    color: #fff;
+    padding-bottom: 10px;
+    font: normal 26px arial, helvetica, sans-serif;
+}
+
+#footer .col p {
+    color: #c5c5c5;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+/*contact*/
+#footer .col .left {
+    text-align: left;
+}
+
+#footer .col .right {
+
+}
+
+/*友情链接*/
+#friendLink {
+    background: #080808;
+    text-align: center;
+    color: #fff;
+    padding: 25px 0 20px;
+}
+
+#friendLink .links {
+    padding-top: 15px;
+    width: 507px;
+    margin: 0 auto;
+    /*display: inline-block;*/
+}
+
+#friendLink .links li {
+    float: left;
+    padding: 0 3px;
+
+}
+
+#friendLink .links li a {
+    color: #fff;
+    font-size: 13px;
+}
+
+#friendLink p {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+/*左侧固定电话*/
+#phone {
+    position: fixed;
+    width: 268px;
+    height: 218px;
+    z-index: 999;
+    top: 240px;
+    left: -100px;
+}
+
+#phone div {
+    position: absolute;
+}
+
+#phone2 {
+    display: none;
+    transform-origin: 110px 104px;
+}
+
+#phone1 {
+    left: 100px;
+    transform-origin:30px 100px;
+}
+
+/*右侧固定联系方式*/
+#sideBar {
+    width: 42px;
+    height: 160px;
+    position: fixed;
+    right: 0;
+    top: 240px;
+}
+
+#sideBar li a {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: url(../images/right_menu_ico.png) no-repeat;
+}
+
+#sideBar li.qq a {
+    margin: 2px 0;
+    position: relative;
+}
+
+#sideBar li.note a {
+    position: relative;
+}
+
+#sideBar li a div {
+    height: 42px;
+    position: absolute;
+    width: 42px;
+}
+
+#sideBar li.qq a .top {
+    background: url(../images/right_menu_ico.png) no-repeat 0 -42px;
+}
+
+#sideBar li.qq a .bottom {
+
+    width: 163px;
+    left: 42px;
+    background: url(../images/online_qq_img.png) no-repeat;
+}
+
+#sideBar li.note a .top {
+    background: url(../images/right_menu_ico.png) no-repeat 0 -84px;
+}
+
+#sideBar li.note a .bottom {
+    left: 42px;
+
+    width: 163px;
+    background: url(../images/message_img.png) no-repeat;
+}

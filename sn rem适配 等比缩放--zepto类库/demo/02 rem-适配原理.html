@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            /*基准值*/
+            font-size: 100px;
+        }
+        header{
+            width: 100%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: center;
+            font-size: 0.24rem;
+            background: pink;
+            color: red;
+        }
+        /*假设：适配  320px 100px  640px 200px*/
+        /*两种设备  目标：适配主流机型*/
+        @media (min-width: 320px) {
+            html{
+                font-size: 100px;
+            }
+        }
+        @media (min-width: 414px) {
+            html{
+                font-size: 129.375px;
+            }
+        }
+        @media (min-width: 640px) {
+            html{
+                font-size: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--流式布局-->
+    <!--宽度自适应  高度固定显示-->
+    <header>购物车</header>
+    <!--非主流适配方法   等比缩放按照不同的手机  scale-->
+    <!--rem适配：高度和宽度都需要自适应  等比缩放 大小尺寸px -->
+    <!--如果 固定像素的设置  改用非固定像素  rem em 单位-->
+</body>
+</html>
