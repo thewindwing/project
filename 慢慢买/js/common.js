@@ -10,7 +10,7 @@ function getproductId() {
         obj[item.split('=')[0]] = item.split('=')[1];
         // console.log(obj);//{categoryid: "11"}
     });
-    console.log(obj)
+    // console.log(obj)
     return obj;
 
 }

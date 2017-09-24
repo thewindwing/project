@@ -75,7 +75,7 @@ function getRecommendList(categoryid, pageid) {
                 //注意，点击下拉框选项 时触发onchange事件，并且this指向select，$(this).val(2)指的是第二项即option中value=2项
                 // getRecommendList(categoryid, $(this).val());
                 //    不可以再次调用这个函数，这里虽然改变了选中项，但并没有改变地址栏的pageid值,即还是在当前页面内渲染
-                window.location.href = 'productList.html?categoryid=' + categoryid + '&pageid=' + $(this).val();//网址不用加
+                window.location.href = 'productList.html?categoryid=' + categoryid + '&pageid=' + $(this).val();//网址不用加  
             });
 
             //    点击上一页下一页渲染对应的列表项
